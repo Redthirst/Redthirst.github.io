@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Illustrografika</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="Assets/Code/jquery-3.7.1.js"></script>
+    <script src="https://kit.fontawesome.com/a7c45f933d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container-fluid text-center ">
+        <div class="row align-items-center mx-5" id="header" style="margin: 20px 0px 96px;"> <!-- Header/navbar || Move it to a burger menu when accessed with phone -->
+            <div class="row justify-content-center gy-2" id="burger" style="display: none; margin: 20px 0px 0px 0px;"></div>
+          <div class="col-sm-1" id="logoCont">
+            <div class="row" style="column-gap: 25%;">
+              <div class="col-12" id="logo"><img src="Assets/Images/logo.png" class="img-fluid"></div> <!-- Logo gets too big on phone -->
+              <div class="col-3" id="burgerBtnCont" style="display:none;"><button type="button" id="burgerBtn" onclick="showMenu(true)"><img src="Assets/Images/Burger_Menu_Default.png" class="img-fluid" id="burger-image"></button></div>
+            </div>
+          </div>
+          <div class="col-auto offset-md-7" id="header-offset">
+            <button class="headerbutton" type="button" onclick="navToNode('cs')"><div class="header">GAMES</div></button>
+          </div>
+            <div class="col-auto">
+            <button class="headerbutton" type="button" onclick="navToNode('about')"><div class="header">ABOUT</div></button>
+            </div>
+            <div class="col-auto">
+              <button class="headerbutton" type="button" onclick="navToNode('contact')"><div class="header">SOCIAL</div></button>
+            </div>
+            <div class="col-auto">
+              <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="header">CONTACT</div></button>
+
+            </div>
+          
+
+        </div>
+        <div class="row justify-content-center mx-5" style="margin: 0px 0px 96px;"> <!-- Welcome -->
+          <div class="col-sm-6" id="wBanner">
+            <img src="Assets/Images/welcome.png" class="img-fluid">
+          </div>
+          <div class="col-sm-6">
+            <div class="bodytxt"><div class="title">WELCOME TO ILLUSTROGRAFIKA</div>Illustrografika is an independent duo of developers proudly based in Eastern Europe. We are passionate about making narrative CRPG games that intertwine history, culture, storytelling and art. Illustrografika is about opening and closing the doors to other times, other people and other places, however terrifying, terrible and beautiful the journey may be.</div>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="margin-bottom: 96px; background-color: black; height: 520px;"> <!-- Coming Soon -->
+          <div class="col-4 offset-md-1"><div class="title" id="cs" style="color: white; padding-top:215px">COMING SOON</div></div>
+        </div>
+        <div class="row align-items-center mx-5" id="about" style="margin: 0px 0px 96px;"> <!-- About Us -->
+          <div class="col-12" style="margin-bottom: 20px;"><span class="title">ABOUT</span></div>
+          <div class="col-sm-6" style="margin-bottom: 20px;">
+                  <img src="Assets/Images/roots.png" class="img-fluid">
+            </div>
+            <div class="col-sm-6" style="margin-bottom: 20px;">
+              <span class="bodytxt"><span class="title">ROOTS</span>Our philosophy is a radical acceptance of the simple fact - we accept that our lives - be it our cultural heritage or worldviews - will seep and creep into whatever we set our mind. However, we also vow to see the world as a diverse infinity as it is, and translate it into our with care and love for other lived experiences.</span>
+            </div>
+
+            <div class="col-sm-6" style="margin-bottom: 20px;">
+              <span class="bodytxt"><span class="title">CRAFT</span>As a small team consisting of only two people - bedroom developers if you will - we see our work more like craft and less than production. Every element, no matter how small, is painstaking and intentional, forming a harmonious structure where every action, detail and emotion matters.</span>
+            </div>
+            <div class="col-sm-6" style="margin-bottom: 20px;"> 
+              <img src="Assets/Images/craft.png" class="img-fluid"> <!-- Has to be moved on top of the text when accessed through phone -->
+            </div>
+            
+          </div>
+          <div class="row justify-content-center mx-5" style="margin: 0px 0px 96px;">
+            <div class="col-12"><img src="Assets/Images/banner.png" class="img-fluid" id="banner"></div> <!-- Banner -->
+          </div>
+          <div class="row justify-content-around mx-5" style="margin: 0px 0px 96px;"> <!-- Dev profiles -->
+            <div class="col-sm-4" style="margin-bottom: 20px;">
+              <div class="col-sm" style="margin-bottom: 20px;">
+              <img src="Assets/Images/marz.png" class="img-fluid">
+            </div>
+              <div class="bodytxt"><div class="bg" style="background-image: url(Assets/Images/name_plate.png); background-size: 100% 100%; background-position: center;"><div class="names">MARZ</div></div>I’m a Siberian artist, writer and game designer based in Estonia. Major obsession with Early Medieval Slavic states and Westerns. My background lies in graphic design and education.</div>
+              <div class="btn-group btn-group-sm" role="group" style="margin: 0px; padding: 0px; min-width: 100%; justify-content:start">
+                <form>
+                  <button type="submit" class="personalbtn" formaction="https://bsky.app/profile/sanktmarz.bsky.social" formtarget="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky"></i></button>
+                </form>
+                <button type="button" class="personalbtn"><i class="fa-brands fa-mastodon"></i></button>
+              </div>
+            </div>
+            <div class="col-sm-4" style="margin-bottom: 20px;">
+              <div class="col-sm" style="margin-bottom: 20px;">
+              <img src="Assets/Images/laerin.jpg" class="img-fluid">
+            </div>
+              <div class="bodytxt"><div class="bg" style="background-image: url(Assets/Images/name_plate.png); background-size: 100% 100%; background-position: center;"><div class="names">LAERIN</div></div>I’m a Ukrainian coder/game designer. Major inspirations from history and astronomy (NOT astrology). I have a Bachelor’s in Philosophy which will never be useful for anything.</div>
+              <div class="btn-group btn-group-sm" role="group" style="margin: 0px; padding: 0px; min-width: 100%; justify-content:start">
+                <button type="button" class="personalbtn"><i class="fa-brands fa-bluesky"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center" id="contact" style="margin-bottom: 96px; background-color: black; padding: 60px 0px; flex-direction: row;"> <!-- Contact -->
+            
+            <div class="col-sm-5">
+              <div class="row justify-content-center" style="flex-direction: column;">
+                <div class="col-sm-12" style="max-width: 100%;" ><span class="connect">CONNECT WITH US<br>ON SOCIAL MEDIA</span></div> 
+                <div class="col-sm-12" style="max-width: 100%; " id="smbuttons">
+                  <div class="btn-group btn-group-sm" role="group" style="column-gap: 8px; margin: 0px;">
+                    <button type="button" class="smbutton"><i class="fa-brands fa-discord"></i></button>
+                    <button type="button" class="smbutton"><i class="fa-brands fa-youtube"></i></button>
+                    <button type="button" class="smbutton"><i class="fa-brands fa-bluesky"></i></button>
+                    <button type="button" class="smbutton"><i class="fa-brands fa-twitch"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-sm-3 offset-md-0" id="sub" style="margin-bottom: 20px; display: inline-block; width: auto;">
+              <div class="newstxt">Subscribe to our newsletter</div>
+              <input type="email" placeholder="example@gmail.com" id="emailInput">
+              <!--<div class="col-sm-4" style="margin-bottom: 20px; max-width: fit-content;" id="newsletter">ms has to be set to 0 in JS when resolution gets to phone levels -->
+              <div class="row" style="column-gap: 1%;">
+                <div class="col-auto" style="padding-right: 0px;"><button class="subbutton" button type="button" onclick="submitNewsletter()"><div class="submit">SUBSCRIBE</div></button></div>
+                <div class="col-auto" style="padding: 0px 10px;" id="privacyCont"><input type="checkbox" id="chkbox"> <div class="privacy">I agree to the Privacy Policy</div></div>
+              </div>
+              
+              </div>
+            </div>
+          
+          </div>
+          <div class="row justify-content-center" id="basement" style="margin-bottom: 20px; column-gap: 5%; align-self: center; max-width: 100%;"> <!-- Basement || Has to be aligned to the center of the screen when resolution gets low -->
+            <div class="d-flex justify-content-center" style="margin-bottom: 20px;"> 
+              <div class="basement">GAMES</div>
+              <button class="basementbutton" type="button"><div class="basementbody">Bury Me Not</div></button>
+            </div>
+            <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+              <div class="basement">SITEMAP</div>
+              <button class="basementbutton" type="button"><div class="basementbody">Home</div></button>
+              <button class="basementbutton" type="button"><div class="basementbody">Games</div></button>
+              <button class="basementbutton" type="button"><div class="basementbody">About</div></button>
+              <button class="basementbutton" type="button"><div class="basementbody">Contact</div></button>
+            </div>
+            <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+              <div class="basement">CONTACT</div>
+              <button class="basementbutton" type="button"><span class="basementbody">Email</span></button>
+              <button class="basementbutton" type="button"><span class="basementbody">Meowcity</span></button>
+              <button class="basementbutton" type="button"><span class="basementbody">Presskit</span></button>
+            </div>
+          </div>
+      </div>
+  </body>
+</html>
+<style>
+    html,body{
+        background-color: #FCF8F8;
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+   
+    @font-face {
+    font-family: 'Resistance';
+    src: url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.eot');
+    src: url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.woff2') format('woff2'),
+        url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.woff') format('woff'),
+        url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.ttf') format('truetype');
+    }
+
+    button{
+      background-color: #FCF8F8;
+      border-color: #FCF8F8;
+      border-style: solid;
+      border-radius: 50%;
+      border-width: 10px;
+    }
+
+    .d-flex{
+      flex-direction: column; 
+      max-width: fit-content;
+      padding: 0px;
+      height: fit-content;
+      align-items: center;
+    }
+
+    .smbutton{
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 50%;
+      border-width: 0px;
+      background-color: transparent;
+      color: #FCF8F8;
+      font-size: 60px;
+    }
+
+    .personalbtn{
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 50%;
+      border-width: 0px;
+      background-color: transparent;
+      color: black;
+      font-size: 50px;
+    }
+
+    .headerbutton{
+      border-width: 0px;
+      border-radius: 0%;
+      background-color: transparent;
+    }
+
+    .basementbutton{
+      border-width: 0px;
+      border-radius: 0%;
+      display: block;
+      margin: 5px 0px;
+      background-color: transparent;
+      
+    }
+    .subbutton{
+      background-color: #C84C4C;
+      border-width: 0px;
+      border-radius: 0%;
+      padding: 0px 10px;  
+    }
+    input[type="email"], textarea{
+      background-color: #FCF8F8;
+      border-color: #FCF8F8;
+      border-style: solid;
+      border-width: 0px;
+      padding: 4px;
+      margin: 10px 0px;
+      min-width: 100%;
+      max-width: 100%;
+      
+    }
+    input[type="checkbox"]{
+      padding: 0px;
+      margin: 0px;
+    }
+
+    @font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-Regular.ttf');
+    }
+    .bodytxt {
+    font-family: "Merriweather", sans-serif;
+    font-size: 24px;
+    color: black;
+    display:block;
+    text-align: left;
+    }
+
+    .newstxt {
+    font-family: "Merriweather", sans-serif;
+    font-size: 34px;
+    line-height: 34px;
+    color: #FCF8F8;
+    display:block;
+    text-align: left;
+    }
+
+    .privacy {
+    font-family: "Merriweather", sans-serif;
+    font-size: 12px;
+    color: #FCF8F8;
+    display:inline;
+    text-align: left;
+    padding-left: 4px;
+    }
+    
+    .basementbody{
+    font-family: "Merriweather", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: black;
+    display:block;
+    text-align: center;
+    max-width: fit-content;
+    }
+
+    .title{
+    font-family: "Resistance", sans-serif;
+    font-size: 64px;
+    color: black;
+    display:block;
+    text-align: left;
+    }
+    
+    .connect{
+    font-family: "Resistance", sans-serif;
+    font-size: 64px;
+    line-height: 64px;
+    color: #FCF8F8;
+    display:block;
+    text-align: center;
+    }
+
+    .submit{
+    font-family: "Resistance", sans-serif;
+    font-size: 20px;
+    color: black;
+    display:block;
+    text-align: left;
+    padding: 0px;
+    }
+    .header{
+    font-family: "Resistance", sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    color: black;
+    display:block;
+    text-align: left;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    }
+    .basement{
+    font-family: "Resistance", sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    display:block;
+    text-align: center;
+    }
+    .names{
+    font-family: "Resistance", sans-serif;
+    font-size: 48px;
+    color: #FCF8F8;
+    display:block;
+    text-align: center;
+    }
+
+
+   
+
+    @media screen and (max-width: 1000px){ /* Changes font size for the Illustrografika */
+      .title{
+        font-size: 48px;
+      }
+      .connect{
+        font-size: 48px;
+      }
+    }
+
+    @media screen and (max-width: 434px){
+      .title{
+        font-size: 36px;
+      }
+      .connect{
+        font-size: 36px;
+      }
+    }
+
+    @media screen and (max-width: 768px){
+      .btn-group{
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+    }
+
+    @media screen and (max-width: 880px){
+      .connect{
+        text-align: center;
+      }
+    }
+
+      
+    @media screen and (max-width: 574px){
+      .btn-group{
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+    }
+
+    @media screen and (max-width: 880px){
+      .header{
+        text-align: center;
+        padding: 0px;
+      }
+    }
+
+
+</style>
+
+<script>
+var bBurg = false;
+var interval = false;
+var contactState = false;
+
+$(document).ready(function(){
+  createBurger();
+  var x = $(window).width();
+  setOffset(x);
+});
+
+$(window).on('resize', function(){
+  var x = $(this).width();
+  setOffset(x);
+});
+
+function showMenu(value){ // Opens/closes the burger menu when the button is pressed
+  let burger = document.getElementById("burger");
+  let burgerBtn = document.getElementById("burgerBtn");
+  let burgerImage = document.getElementById("burger-image");
+
+  if(value == true){
+    burger.style.display = "block";
+    burgerBtn.setAttribute("onclick", "javascript: showMenu(false)");
+    burgerImage.setAttribute("src", "Assets/Images/Burger_Menu_Cancel.png")
+  }
+  else{
+    burger.style.display = "none";
+    burgerBtn.setAttribute("onclick", "javascript: showMenu(true)");
+    burgerImage.setAttribute("src", "Assets/Images/Burger_Menu_Default.png")
+  }
+}
+
+function createBurger(){
+  if($(window).width() <= 880 && bBurg == false){
+    bBurg = true;
+    
+    let header = document.getElementById("header");
+    let headerContents = Array.from(header.children);
+    let burger = document.getElementById("burger");
+    
+    for(let i = 2; i < headerContents.length; i++){ // Reparents the columns and changes their properties so they align
+      headerContents[i].setAttribute("class", "col-12");
+      burger.appendChild(headerContents[i]);
+    }
+    
+    header.appendChild(burger);
+
+    document.getElementById("burgerBtnCont").style.display = "block"; // Shows the burger button
+    document.getElementById("logo").setAttribute("class", "col-6");
+    document.getElementById("logoCont").setAttribute("class", "col-sm-12");
+    document.getElementById("basement").setAttribute("class", "d-flex justify-content-center");
+    document.getElementById("banner").setAttribute("src", "Assets/Images/Illustration_Banner_Mobile.png");
+    document.getElementById("contact").setAttribute("style", "margin-bottom: 96px; background-color: black; padding-bottom: 20px; padding-top: 20px; flex-direction: column;");
+
+
+    header.setAttribute("class", "row align-items-left mx-0");
+    
+
+    let about = document.getElementById("about"); // Repositions the image in the About Us section
+    let children = about.children;
+    about.appendChild(children[3]);
+    
+    document.getElementById("wBanner").setAttribute("class", "col-sm-12");
+  }
+}
+
+function deleteBurger(){
+  if($(window).width() >= 886 && bBurg == true){
+    bBurg = false;
+    let burger = document.getElementById("burger");
+    let burgerContents = Array.from(burger.children);
+    let header = document.getElementById("header");
+    
+    
+    for(let i = 0; i < burgerContents.length; i++){ // Reparents the columns and changes their properties so they align
+      burgerContents[i].setAttribute("class", "col-auto");
+      header.appendChild(burgerContents[i]);
+    }
+
+    document.getElementById("burgerBtnCont").style.display = "none"; // Shows the burger button
+    document.getElementById("logo").setAttribute("class", "col-12");
+    document.getElementById("logoCont").setAttribute("class", "col-sm-1");
+    header.setAttribute("class", "row align-items-left mx-5");
+    document.getElementById("basement").setAttribute("class", "row justify-content-center");
+    document.getElementById("banner").setAttribute("src", "Assets/Images/banner.png");
+    //document.getElementById("contact").setAttribute("style", "margin-bottom: 96px; background-color: black; padding-bottom: 20px; padding-top: 20px; flex-direction: row;");
+
+    let about = document.getElementById("about"); // Repositions the image in the About Us section
+    let children = about.children;
+    about.appendChild(children[3]);
+    
+    document.getElementById("wBanner").setAttribute("class", "col-sm-6");
+  }
+}
+
+function setOffset(x){ // Sets different attributes based on the width of the screen
+  let offset = document.getElementById("header-offset");
+  let sub = document.getElementById("sub");
+  let contact = document.getElementById("contact");
+  
+  if(x <= 1156 && contactState == false){ // Change to column when resolution drops
+    contact.setAttribute("style", "margin-bottom: 96px; background-color: black; padding-bottom: 20px; padding-top: 20px; flex-direction: column;");
+    contactState = true;
+    console.log(contactState);
+  }
+  else if(x >= 1156 && contactState == true){
+    contact.setAttribute("style", "margin-bottom: 96px; background-color: black; padding-bottom: 20px; padding-top: 20px; flex-direction: row;");
+    contactState = false;
+  }
+
+  if(x <= 1800 && x >= 1790){
+    offset.setAttribute("class", "col-auto offset-md-7");
+    sub.setAttribute("class", "col-sm-6 offset-md-1"); // Offset for the "subscribe to newsletter" message
+  }
+  else if(x <= 1790 && x >= 1514){
+    offset.setAttribute("class", "col-auto offset-md-6");
+  }
+  else if(x <= 1514 && x >= 1316){
+    offset.setAttribute("class", "col-auto offset-md-5");
+  }
+  else if(x <= 1316 && x >= 1166){
+    offset.setAttribute("class", "col-auto offset-md-4");
+    if(x <= 1262){
+      sub.setAttribute("class", "col-sm-6 offset-md-1");
+    }
+  }
+  else if(x <= 1166 && x >= 1048){
+    offset.setAttribute("class", "col-auto offset-md-3");
+  }
+  else if(x <= 1048 && x >= 956){
+    offset.setAttribute("class", "col-auto offset-md-2");
+  }
+  else if(x <= 956 && x >= 880){
+    offset.setAttribute("class", "col-auto offset-md-1");
+    deleteBurger();
+  }
+  else if(x <= 880){
+    createBurger();
+  }
+  else if(x <= 766){
+    sub.setAttribute("class", "col-sm-6");
+    
+  }
+  else if(x >= 766 && x <= 800){
+    sub.setAttribute("class", "col-sm-6 offset-md-1");
+  }
+  
+}
+
+function navToNode(id){ // Navigates to the element with the provided id
+  document.getElementById(id).scrollIntoView();
+}
+
+function submitNewsletter(){
+  if(document.getElementById("chkbox").checked){
+    console.log(document.getElementById("emailInput").value);
+  }
+  else{
+    let privacy = document.getElementById("privacyCont");
+    var value = 1;
+    if(interval == false){
+      interval = true;
+      myInterval = setInterval(function(){
+      privacy.style.backgroundColor = `rgba(200, 76, 76, ${value})`;
+      value -= 0.01;
+      if(value <= 0){
+        privacy.style.backgroundColor = "transparent";
+    clearInterval(myInterval);
+    interval = false;
+   }
+    }, 1)
+    }
+  }
+}
+</script>
