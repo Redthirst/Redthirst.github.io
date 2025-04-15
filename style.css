@@ -102,7 +102,7 @@ input[type="checkbox"]{
 .bodytxt {
 font-family: "Merriweather", sans-serif;
 font-size: 1.125rem;
-color: black;
+color: red;
 display:block;
 text-align: left;
 }
