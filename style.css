@@ -2,6 +2,7 @@ html,body{
     background-color: #FCF8F8;
     height: 100%;
     margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
@@ -108,8 +109,8 @@ text-align: left;
 
 .newstxt {
 font-family: "Merriweather", sans-serif;
-font-size: 34px;
-line-height: 34px;
+font-size: 18px;
+line-height: 18px;
 color: #FCF8F8;
 display:block;
 text-align: left;
@@ -136,7 +137,7 @@ max-width: fit-content;
 
 .title{
 font-family: "Avara", sans-serif;
-font-size: 64px;
+font-size: 48px;
 color: black;
 display:block;
 text-align: left;
@@ -144,8 +145,8 @@ text-align: left;
 
 .connect{
 font-family: "Avara", sans-serif;
-font-size: 64px;
-line-height: 64px;
+font-size: 40px;
+line-height: 40px;
 color: #FCF8F8;
 display:block;
 text-align: center;
@@ -161,19 +162,32 @@ padding: 0px;
 }
 .header{
 font-family: "Avara", sans-serif;
-font-size: 32px;
+font-size: 24px;
 line-height: 64px;
+text-decoration: underline;
 color: black;
 display:block;
 text-align: left;
 padding: 0px 0px 0px 0px;
 margin: 0px;
 }
+
+.footer{
+  font-family: "Avara", sans-serif;
+  font-size: 24px;
+  line-height: 64px;
+  text-decoration: underline;
+  color: white;
+  display:block;
+  text-align: left;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  }
 .basement{
 font-family: "Avara", sans-serif;
 font-size: 32px;
 line-height: 32px;
-color: rgb(0, 0, 0);
+color: white;
 width: fit-content;
 display:block;
 text-align: center;

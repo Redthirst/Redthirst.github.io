@@ -11,8 +11,8 @@
     <script src="https://kit.fontawesome.com/a7c45f933d.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container-fluid text-center ">
-        <div class="row justify-content-center" id="header" style="margin: 20px 0px 96px;"> <!-- Header/navbar || Move it to a burger menu when accessed with phone -->
+    <div class="d-flex justify-content-center" style="padding: 0; margin: auto; max-width: 1200px;"> <!-- First column container-->
+        <div class="d-flex flex-row justify-content-between" id="header" style="margin: 0px 24px 64px; max-width: 1200px;"> <!-- Header/navbar || Move it to a burger menu when accessed with phone -->
             <div class="row justify-content-center gy-2" id="burger" style="display: none; margin: 20px 0px 0px 0px;"></div>
           <div class="col-sm-1" id="logoCont">
             <div class="row" style="column-gap: 25%;">
@@ -20,22 +20,33 @@
               <div class="col-3" id="burgerBtnCont" style="display:none;"><button type="button" id="burgerBtn" onclick="showMenu(true)"><img src="Assets/Images/Burger_Menu_Default.png" class="img-fluid" id="burger-image"></button></div>
             </div>
           </div>
-          <div class="col-auto offset-md-4" id="header-offset">
-            <button class="headerbutton" type="button" onclick="navToNode('cs')"><div class="header">GAMES</div></button>
+          <div class="col-auto" id="header-offset">
+            <button class="headerbutton" type="button" onclick="navToNode('cs')"><div class="header">news</div></button>
+            <button class="headerbutton" type="button" onclick="navToNode('about')"><div class="header">projects</div></button>
+            <button class="headerbutton" type="button" onclick="navToNode('contact')"><div class="header">principles</div></button>
+            <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="header">people</div></button>
+            <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="header">social</div></button>
+            <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="header">contact</div></button>
           </div>
-            <div class="col-auto">
-            <button class="headerbutton" type="button" onclick="navToNode('about')"><div class="header">ABOUT</div></button>
+            <!-- <div class="col-auto">
+            <button class="headerbutton" type="button" onclick="navToNode('about')"><div class="header">projects</div></button>
             </div>
             <div class="col-auto">
-              <button class="headerbutton" type="button" onclick="navToNode('contact')"><div class="header">SOCIAL</div></button>
+              <button class="headerbutton" type="button" onclick="navToNode('contact')"><div class="header">principles</div></button>
             </div>
             <div class="col-auto">
-              <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="header">CONTACT</div></button>
+              <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="header">people</div></button>
             </div>
+            <div class="col-auto">
+              <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="header">social</div></button>
+            </div>
+            <div class="col-auto">
+              <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="header">contact</div></button>
+            </div> -->
           
 
         </div>
-        <div class="row justify-content-center mx-5" style="margin: 0px 0px 96px; width: 1200px;"> <!-- Welcome -->
+        <div class="row justify-content-center" style="margin: 0px 24px 64px; max-width: 1200px;"> <!-- Welcome -->
           <div class="col-sm-6" id="wBanner">
             <img src="Assets/Images/Illustration_Welcome.png" class="img-fluid">
           </div>
@@ -43,10 +54,12 @@
             <div class="bodytxt"><div class="title">WELCOME TO ILLUSTROGRAFIKA</div>Illustrografika is an independent duo of developers proudly based in Eastern Europe. We are passionate about making narrative CRPG games that intertwine history, culture, storytelling and art. Illustrografika is about opening and closing the doors to other times, other people and other places, however terrifying, terrible and beautiful the journey may be.</div>
           </div>
         </div>
-        <div class="row justify-content-center" style="margin-bottom: 96px; background-color: black; height: 520px;"> <!-- Coming Soon -->
+      </div>
+        <div class="row justify-content-center" style="margin: 0px 0px 64px; background-color: black; width: 100%; height: 520px;"> <!-- Coming Soon -->
           <div class="col-4 offset-md-1"><div class="title" id="cs" style="color: white; padding-top:215px">COMING SOON</div></div>
         </div>
-        <div class="row align-items-center mx-5" id="about" style="margin: 0px 0px 96px;"> <!-- About Us -->
+        <div class="d-flex justify-content-center" style="padding: 0; margin: auto; max-width: 1200px;"> <!-- Second column container-->
+        <div class="row align-items-center mx-5" id="about" style="margin: 0px 24px 64px; max-width: 1200px;"> <!-- About Us -->
           <div class="col-12" style="margin-bottom: 20px;"><span class="title">ABOUT</span></div>
           <div class="col-sm-6" style="margin-bottom: 20px;">
                   <img src="Assets/Images/Illustration_Roots.png" class="img-fluid">
@@ -70,10 +83,10 @@
             </div>
             
           </div>
-          <div class="row justify-content-center mx-5" style="margin: 0px 0px 96px;">
+          <div class="row justify-content-center mx-5" style="margin: 0px 24px 64px; max-width: 1200px;">
             <div class="col-12"><img src="Assets/Images/Illustration_Banner.png" class="img-fluid" id="banner"></div> <!-- Banner -->
           </div>
-          <div class="row justify-content-around mx-5" style="margin: 0px 0px 96px;"> <!-- Dev profiles -->
+          <div class="row justify-content-around mx-5" style="margin: 0px 24px 64px; max-width: 1200px;"> <!-- Dev profiles -->
             <div class="col-sm-4" style="margin-bottom: 20px;">
               <div class="col-sm" style="margin-bottom: 20px;">
               <img src="Assets/Images/Avatar_Pallas.png" class="img-fluid">
@@ -106,55 +119,53 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-center" id="contact" style="margin-bottom: 96px; background-color: black; padding: 60px 0px; flex-direction: row;"> <!-- Contact -->
-            
-            <div class="col-sm-5">
-              <div class="row justify-content-center" style="flex-direction: column;">
-                <div class="col-sm-12" style="max-width: 100%;" ><span class="connect">CONNECT WITH US<br>ON SOCIAL MEDIA</span></div> 
-                <div class="col-sm-12" style="max-width: 100%; " id="smbuttons">
-                  <div class="btn-group btn-group-sm" role="group" style="column-gap: 8px; margin: 0px;">
-                    <button type="button" class="smbutton"><i class="fa-brands fa-discord"></i></button>
-                    <button type="button" class="smbutton"><i class="fa-brands fa-youtube"></i></button>
-                    <button type="button" class="smbutton"><i class="fa-brands fa-bluesky"></i></button>
-                    <button type="button" class="smbutton"><i class="fa-brands fa-twitch"></i></button>
+        </div>
+          <div class="row justify-content-center" id="contact" style="background-color: black; padding: 60px 0px; flex-direction: row;"> <!-- Contact -->
+            <div class="d-flex align-items-left flex-row" style="padding: 0; margin: auto; max-width: 1200px;">
+              <div class="container">
+                <div class="row">
+                  <div class="col">  <div class="d-flex justify-content-center">
+                    <div class="col-sm-12" style="max-width: 100%;" ><span class="connect">STAY CONNECTED TO<br>ILLUSTROGRAFIKA</span></div> 
+                    <div class="col-sm-12" style="max-width: 100%; " id="smbuttons">
+                      <div class="btn-group btn-group-sm" role="group" style="column-gap: 8px; margin: 0px;">
+                        <button type="button" class="smbutton"><i class="fa-brands fa-discord"></i></button>
+                        <button type="button" class="smbutton"><i class="fa-brands fa-youtube"></i></button>
+                        <button type="button" class="smbutton"><i class="fa-brands fa-bluesky"></i></button>
+                        <button type="button" class="smbutton"><i class="fa-brands fa-twitch"></i></button>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div class="col">
+                  <div class="col-sm-12" >
+                  <div class="col-sm-2" id="sub" style="margin-bottom: 20px; display: inline-block; width: auto;">
+                    <div class="newstxt">Join our newsletter for the latest updates on our projects and games.</div>
+                    <input type="email" placeholder="example@gmail.com" id="emailInput">
+                    <!--<div class="col-sm-4" style="margin-bottom: 20px; max-width: fit-content;" id="newsletter">ms has to be set to 0 in JS when resolution gets to phone levels -->
+                    <div class="row" style="column-gap: 1%;">
+                      <div class="col-auto" style="padding-right: 0px;"><button class="subbutton" button type="button" onclick="submitNewsletter()"><div class="submit">SUBSCRIBE</div></button></div>
+                      <div class="col-auto" style="padding: 0px 10px;" id="privacyCont"><input type="checkbox" id="chkbox"> <div class="privacy">I agree to the Privacy Policy</div></div>
+                    </div>
+                    </div>
+                </div>
               </div>
-            </div>
-          
-            <div class="col-sm-3 offset-md-0" id="sub" style="margin-bottom: 20px; display: inline-block; width: auto;">
-              <div class="newstxt">Subscribe to our newsletter</div>
-              <input type="email" placeholder="example@gmail.com" id="emailInput">
-              <!--<div class="col-sm-4" style="margin-bottom: 20px; max-width: fit-content;" id="newsletter">ms has to be set to 0 in JS when resolution gets to phone levels -->
-              <div class="row" style="column-gap: 1%;">
-                <div class="col-auto" style="padding-right: 0px;"><button class="subbutton" button type="button" onclick="submitNewsletter()"><div class="submit">SUBSCRIBE</div></button></div>
-                <div class="col-auto" style="padding: 0px 10px;" id="privacyCont"><input type="checkbox" id="chkbox"> <div class="privacy">I agree to the Privacy Policy</div></div>
+              <div class="w-100"></div>
+                  <div class="col">
+                    <div class="btn-group btn-group-sm-6" role="group" style="row-gap: 8px; margin: 0px;">
+                    <button class="headerbutton" type="button" onclick="navToNode('cs')"><div class="footer">news</div></button>
+                    <button class="headerbutton" type="button" onclick="navToNode('about')"><div class="footer">projects</div></button>
+                    <button class="headerbutton" type="button" onclick="navToNode('contact')"><div class="footer">principles</div></button>
+                    <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="footer">people</div></button>
+                    <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="footer">social</div></button>
+                  </div>
+                </div>
+                  <div class="col">
+                  <div class="basement">CONTACT</div>
+                  <div class="footer">email@email.com</div>
+                  <div class="footer">illustrografika presskit</div></div>
+                </div>
               </div>
-              
-              </div>
-            </div>
-          
-          </div>
-          <div class="row justify-content-center" id="basement" style="margin-bottom: 20px; column-gap: 5%; align-self: center; max-width: 100%;"> <!-- Basement || Has to be aligned to the center of the screen when resolution gets low -->
-            <div class="d-flex justify-content-center" style="margin-bottom: 20px;"> 
-              <div class="basement">GAMES</div>
-              <button class="basementbutton" type="button"><div class="basementbody">Bury Me Not</div></button>
-            </div>
-            <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
-              <div class="basement">SITEMAP</div>
-              <button class="basementbutton" type="button"><div class="basementbody">Home</div></button>
-              <button class="basementbutton" type="button"><div class="basementbody">Games</div></button>
-              <button class="basementbutton" type="button"><div class="basementbody">About</div></button>
-              <button class="basementbutton" type="button"><div class="basementbody">Contact</div></button>
-            </div>
-            <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
-              <div class="basement">CONTACT</div>
-              <button class="basementbutton" type="button"><span class="basementbody">Email</span></button>
-              <button class="basementbutton" type="button"><span class="basementbody">Meowcity</span></button>
-              <button class="basementbutton" type="button"><span class="basementbody">Presskit</span></button>
-            </div>
-          </div>
-      </div>
+            </div>       
   </body>
 </html>
 
@@ -166,12 +177,12 @@ var contactState = false;
 $(document).ready(function(){
   createBurger();
   var x = $(window).width();
-  setOffset(x);
+  //setOffset(x);
 });
 
 $(window).on('resize', function(){
   var x = $(this).width();
-  setOffset(x);
+  //setOffset(x);
 });
 
 function showMenu(value){ // Opens/closes the burger menu when the button is pressed
