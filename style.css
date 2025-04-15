@@ -17,8 +17,8 @@ src: url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_gene
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('assets/fonts/Merriweather/Merriweather-Regular.ttf');
-    src: url('assets/Fonts/Merriweather/Merriweather-Regular.woff2') format('woff2');
+    src: url('Assets/fonts/Merriweather/Merriweather-Regular.ttf');
+    src: url('Assets/Fonts/Merriweather/Merriweather-Regular.woff2') format('woff2');
 }
 
 @font-face{
