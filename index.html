@@ -4,21 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Illustrografika</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Images/Favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <script src="Assets/Code/jquery-3.7.1.js"></script>
     <script src="https://kit.fontawesome.com/a7c45f933d.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container-fluid text-center ">
-        <div class="row align-items-center mx-5" id="header" style="margin: 20px 0px 96px;"> <!-- Header/navbar || Move it to a burger menu when accessed with phone -->
+        <div class="row justify-content-center" id="header" style="margin: 20px 0px 96px;"> <!-- Header/navbar || Move it to a burger menu when accessed with phone -->
             <div class="row justify-content-center gy-2" id="burger" style="display: none; margin: 20px 0px 0px 0px;"></div>
           <div class="col-sm-1" id="logoCont">
             <div class="row" style="column-gap: 25%;">
-              <div class="col-12" id="logo"><img src="Assets/Images/logo.png" class="img-fluid"></div> <!-- Logo gets too big on phone -->
+              <div class="col-12" id="logo"><img src="Assets/Images/Logo_WB.png" class="img-fluid"></div> <!-- Logo gets too big on phone -->
               <div class="col-3" id="burgerBtnCont" style="display:none;"><button type="button" id="burgerBtn" onclick="showMenu(true)"><img src="Assets/Images/Burger_Menu_Default.png" class="img-fluid" id="burger-image"></button></div>
             </div>
           </div>
-          <div class="col-auto offset-md-7" id="header-offset">
+          <div class="col-auto offset-md-4" id="header-offset">
             <button class="headerbutton" type="button" onclick="navToNode('cs')"><div class="header">GAMES</div></button>
           </div>
             <div class="col-auto">
@@ -29,14 +31,13 @@
             </div>
             <div class="col-auto">
               <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="header">CONTACT</div></button>
-
             </div>
           
 
         </div>
-        <div class="row justify-content-center mx-5" style="margin: 0px 0px 96px;"> <!-- Welcome -->
+        <div class="row justify-content-center mx-5" style="margin: 0px 0px 96px; width: 1200px;"> <!-- Welcome -->
           <div class="col-sm-6" id="wBanner">
-            <img src="Assets/Images/welcome.png" class="img-fluid">
+            <img src="Assets/Images/Illustration_Welcome.png" class="img-fluid">
           </div>
           <div class="col-sm-6">
             <div class="bodytxt"><div class="title">WELCOME TO ILLUSTROGRAFIKA</div>Illustrografika is an independent duo of developers proudly based in Eastern Europe. We are passionate about making narrative CRPG games that intertwine history, culture, storytelling and art. Illustrografika is about opening and closing the doors to other times, other people and other places, however terrifying, terrible and beautiful the journey may be.</div>
@@ -48,7 +49,7 @@
         <div class="row align-items-center mx-5" id="about" style="margin: 0px 0px 96px;"> <!-- About Us -->
           <div class="col-12" style="margin-bottom: 20px;"><span class="title">ABOUT</span></div>
           <div class="col-sm-6" style="margin-bottom: 20px;">
-                  <img src="Assets/Images/roots.png" class="img-fluid">
+                  <img src="Assets/Images/Illustration_Roots.png" class="img-fluid">
             </div>
             <div class="col-sm-6" style="margin-bottom: 20px;">
               <span class="bodytxt"><span class="title">ROOTS</span>Our philosophy is a radical acceptance of the simple fact - we accept that our lives - be it our cultural heritage or worldviews - will seep and creep into whatever we set our mind. However, we also vow to see the world as a diverse infinity as it is, and translate it into our with care and love for other lived experiences.</span>
@@ -58,33 +59,50 @@
               <span class="bodytxt"><span class="title">CRAFT</span>As a small team consisting of only two people - bedroom developers if you will - we see our work more like craft and less than production. Every element, no matter how small, is painstaking and intentional, forming a harmonious structure where every action, detail and emotion matters.</span>
             </div>
             <div class="col-sm-6" style="margin-bottom: 20px;"> 
-              <img src="Assets/Images/craft.png" class="img-fluid"> <!-- Has to be moved on top of the text when accessed through phone -->
+              <img src="Assets/Images/Illustration_Craft.png" class="img-fluid"> <!-- Has to be moved on top of the text when accessed through phone -->
+            </div>
+
+            <div class="col-sm-6" style="margin-bottom: 20px;">
+                  <img src="Assets/Images/Illustration_Poise.png" class="img-fluid">
+            </div>
+            <div class="col-sm-6" style="margin-bottom: 20px;">
+              <span class="bodytxt"><span class="title">POISE</span>Today, the world ends. Gentle moonlight illuminates a serpent opening it’s jaw, a man who has no mercy for another, a dog lashed one too many times. Don’t worry. Tomorrow, pick up the pieces and try again.</span>
             </div>
             
           </div>
           <div class="row justify-content-center mx-5" style="margin: 0px 0px 96px;">
-            <div class="col-12"><img src="Assets/Images/banner.png" class="img-fluid" id="banner"></div> <!-- Banner -->
+            <div class="col-12"><img src="Assets/Images/Illustration_Banner.png" class="img-fluid" id="banner"></div> <!-- Banner -->
           </div>
           <div class="row justify-content-around mx-5" style="margin: 0px 0px 96px;"> <!-- Dev profiles -->
             <div class="col-sm-4" style="margin-bottom: 20px;">
               <div class="col-sm" style="margin-bottom: 20px;">
-              <img src="Assets/Images/marz.png" class="img-fluid">
+              <img src="Assets/Images/Avatar_Pallas.png" class="img-fluid">
             </div>
-              <div class="bodytxt"><div class="bg" style="background-image: url(Assets/Images/name_plate.png); background-size: 100% 100%; background-position: center;"><div class="names">MARZ</div></div>I’m a Siberian artist, writer and game designer based in Estonia. Major obsession with Early Medieval Slavic states and Westerns. My background lies in graphic design and education.</div>
-              <div class="btn-group btn-group-sm" role="group" style="margin: 0px; padding: 0px; min-width: 100%; justify-content:start">
+              <div class="bodytxt"><div class="bg" style="background-image: url(Assets/Images/name_plate.png); background-size: 100% 100%; background-position: center;"><div class="names">VINETA</div></div>Russian artist, writer and game designer based in Slovakia. Obsessed with Early Medieval Slavic/Baltic states and Westerns.</div>
+              <div class="btn-group btn-group-sm" role="group" style="margin: 0px; padding: 0px; min-width: 100%; gap: 10px; justify-content:start">
                 <form>
-                  <button type="submit" class="personalbtn" formaction="https://bsky.app/profile/sanktmarz.bsky.social" formtarget="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky"></i></button>
+                  <button type="submit" class="personalbtn" formaction="https://bsky.app/profile/vinetacrisium.bsky.social" formtarget="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky"></i></button>
                 </form>
-                <button type="button" class="personalbtn"><i class="fa-brands fa-mastodon"></i></button>
+                <form>
+                  <button type="submit" class="personalbtn" formaction="https://medium.com/@sanktmarz" formtarget="_blank" rel="noopener noreferrer"><i class="fa-brands fa-medium"></i></button>
+                </form>
+                <form>
+                  <button type="submit" class="personalbtn" formaction="https://bsky.app/profile/sanktmarz.bsky.social" formtarget="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tumblr"></i></button>
+                </form>
+                <form>
+                  <button type="submit" class="personalbtn" formaction="https://bsky.app/profile/sanktmarz.bsky.social" formtarget="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></button>
+                </form>
               </div>
             </div>
             <div class="col-sm-4" style="margin-bottom: 20px;">
               <div class="col-sm" style="margin-bottom: 20px;">
-              <img src="Assets/Images/laerin.jpg" class="img-fluid">
+              <img src="Assets/Images/Avatar_Ceres.png" class="img-fluid">
             </div>
-              <div class="bodytxt"><div class="bg" style="background-image: url(Assets/Images/name_plate.png); background-size: 100% 100%; background-position: center;"><div class="names">LAERIN</div></div>I’m a Ukrainian coder/game designer. Major inspirations from history and astronomy (NOT astrology). I have a Bachelor’s in Philosophy which will never be useful for anything.</div>
-              <div class="btn-group btn-group-sm" role="group" style="margin: 0px; padding: 0px; min-width: 100%; justify-content:start">
-                <button type="button" class="personalbtn"><i class="fa-brands fa-bluesky"></i></button>
+              <div class="bodytxt"><div class="bg" style="background-image: url(Assets/Images/name_plate.png); background-size: 100% 100%; background-position: center;"><div class="names">LAERIN</div></div>Ukrainian coder/game designer. Major inspirations from history and astronomy (NOT astrology). I have a Bachelor’s in Philosophy which will never be useful for anything.</div>
+              <div class="btn-group btn-group-sm" role="group" style="margin: 0px; padding: 0px; min-width: 100%; gap: 10px; justify-content:start">
+                <form>
+                  <button type="submit" class="personalbtn" formaction="https://bsky.app/profile/laerinelt.bsky.social" formtarget="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky"></i></button>
+                </form>
               </div>
             </div>
           </div>
@@ -139,238 +157,6 @@
       </div>
   </body>
 </html>
-<style>
-    html,body{
-        background-color: #FCF8F8;
-        height: 100%;
-        margin: 0;
-        overflow-x: hidden;
-    }
-   
-    @font-face {
-    font-family: 'Resistance';
-    src: url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.eot');
-    src: url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.woff2') format('woff2'),
-        url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.woff') format('woff'),
-        url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.ttf') format('truetype');
-    }
-
-    button{
-      background-color: #FCF8F8;
-      border-color: #FCF8F8;
-      border-style: solid;
-      border-radius: 50%;
-      border-width: 10px;
-    }
-
-    .d-flex{
-      flex-direction: column; 
-      max-width: fit-content;
-      padding: 0px;
-      height: fit-content;
-      align-items: center;
-    }
-
-    .smbutton{
-      max-width: 100px;
-      max-height: 100px;
-      border-radius: 50%;
-      border-width: 0px;
-      background-color: transparent;
-      color: #FCF8F8;
-      font-size: 60px;
-    }
-
-    .personalbtn{
-      max-width: 100px;
-      max-height: 100px;
-      border-radius: 50%;
-      border-width: 0px;
-      background-color: transparent;
-      color: black;
-      font-size: 50px;
-    }
-
-    .headerbutton{
-      border-width: 0px;
-      border-radius: 0%;
-      background-color: transparent;
-    }
-
-    .basementbutton{
-      border-width: 0px;
-      border-radius: 0%;
-      display: block;
-      margin: 5px 0px;
-      background-color: transparent;
-      
-    }
-    .subbutton{
-      background-color: #C84C4C;
-      border-width: 0px;
-      border-radius: 0%;
-      padding: 0px 10px;  
-    }
-    input[type="email"], textarea{
-      background-color: #FCF8F8;
-      border-color: #FCF8F8;
-      border-style: solid;
-      border-width: 0px;
-      padding: 4px;
-      margin: 10px 0px;
-      min-width: 100%;
-      max-width: 100%;
-      
-    }
-    input[type="checkbox"]{
-      padding: 0px;
-      margin: 0px;
-    }
-
-    @font-face {
-    font-family: 'Merriweather';
-    src: url('assets/fonts/Merriweather/Merriweather-Regular.ttf');
-    }
-    .bodytxt {
-    font-family: "Merriweather";
-    font-size: 24px;
-    color: black;
-    display:block;
-    text-align: left;
-    }
-
-    .newstxt {
-    font-family: "Merriweather";
-    font-size: 34px;
-    line-height: 34px;
-    color: #FCF8F8;
-    display:block;
-    text-align: left;
-    }
-
-    .privacy {
-    font-family: "Merriweather";
-    font-size: 12px;
-    color: #FCF8F8;
-    display:inline;
-    text-align: left;
-    padding-left: 4px;
-    }
-    
-    .basementbody{
-    font-family: "Merriweather";
-    font-size: 24px;
-    line-height: 24px;
-    color: black;
-    display:block;
-    text-align: center;
-    max-width: fit-content;
-    }
-
-    .title{
-    font-family: "Resistance";
-    font-size: 64px;
-    color: black;
-    display:block;
-    text-align: left;
-    }
-    
-    .connect{
-    font-family: "Resistance", sans-serif;
-    font-size: 64px;
-    line-height: 64px;
-    color: #FCF8F8;
-    display:block;
-    text-align: center;
-    }
-
-    .submit{
-    font-family: "Resistance", sans-serif;
-    font-size: 20px;
-    color: black;
-    display:block;
-    text-align: left;
-    padding: 0px;
-    }
-    .header{
-    font-family: "Resistance", sans-serif;
-    font-size: 32px;
-    line-height: 32px;
-    color: black;
-    display:block;
-    text-align: left;
-    padding: 0px 0px 0px 0px;
-    margin: 0px;
-    }
-    .basement{
-    font-family: "Resistance", sans-serif;
-    font-size: 32px;
-    line-height: 32px;
-    color: rgb(0, 0, 0);
-    width: fit-content;
-    display:block;
-    text-align: center;
-    }
-    .names{
-    font-family: "Resistance", sans-serif;
-    font-size: 48px;
-    color: #FCF8F8;
-    display:block;
-    text-align: center;
-    }
-
-
-   
-
-    @media screen and (max-width: 1000px){ /* Changes font size for the Illustrografika */
-      .title{
-        font-size: 48px;
-      }
-      .connect{
-        font-size: 48px;
-      }
-    }
-
-    @media screen and (max-width: 434px){
-      .title{
-        font-size: 36px;
-      }
-      .connect{
-        font-size: 36px;
-      }
-    }
-
-    @media screen and (max-width: 768px){
-      .btn-group{
-      flex-wrap: nowrap;
-      flex-direction: row;
-    }
-    }
-
-    @media screen and (max-width: 880px){
-      .connect{
-        text-align: center;
-      }
-    }
-
-      
-    @media screen and (max-width: 574px){
-      .btn-group{
-      flex-wrap: nowrap;
-      flex-direction: row;
-    }
-    }
-
-    @media screen and (max-width: 880px){
-      .header{
-        text-align: center;
-        padding: 0px;
-      }
-    }
-
-
-</style>
 
 <script>
 var bBurg = false;
@@ -484,29 +270,29 @@ function setOffset(x){ // Sets different attributes based on the width of the sc
   }
 
   if(x <= 1800 && x >= 1790){
-    offset.setAttribute("class", "col-auto offset-md-7");
+    offset.setAttribute("class", "col-auto offset-md-4");
     sub.setAttribute("class", "col-sm-6 offset-md-1"); // Offset for the "subscribe to newsletter" message
   }
   else if(x <= 1790 && x >= 1514){
-    offset.setAttribute("class", "col-auto offset-md-6");
+    offset.setAttribute("class", "col-auto offset-md-4");
   }
   else if(x <= 1514 && x >= 1316){
-    offset.setAttribute("class", "col-auto offset-md-5");
+    offset.setAttribute("class", "col-auto offset-md-4");
   }
   else if(x <= 1316 && x >= 1166){
-    offset.setAttribute("class", "col-auto offset-md-4");
+    offset.setAttribute("class", "col-auto offset-md-3");
     if(x <= 1262){
       sub.setAttribute("class", "col-sm-6 offset-md-1");
     }
   }
   else if(x <= 1166 && x >= 1048){
-    offset.setAttribute("class", "col-auto offset-md-3");
-  }
-  else if(x <= 1048 && x >= 956){
     offset.setAttribute("class", "col-auto offset-md-2");
   }
-  else if(x <= 956 && x >= 880){
+  else if(x <= 1048 && x >= 956){
     offset.setAttribute("class", "col-auto offset-md-1");
+  }
+  else if(x <= 956 && x >= 880){
+    offset.setAttribute("class", "col-auto");
     deleteBurger();
   }
   else if(x <= 880){

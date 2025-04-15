@@ -1,0 +1,236 @@
+html,body{
+    background-color: #FCF8F8;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+font-family: 'Resistance';
+src: url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.eot');
+src: url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.woff2') format('woff2'),
+    url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.woff') format('woff'),
+    url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-Regular.ttf');
+    src: url('assets/Fonts/Merriweather/Merriweather-Regular.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Avara';
+    src: url('Assets/Fonts/Avara/Avara-Bold.ttf');
+    src: url('Assets/Fonts/Avara/Avara-Bold.woff2') format('woff2');
+}
+
+button{
+  background-color: #FCF8F8;
+  border-color: #FCF8F8;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 10px;
+}
+
+.d-flex{
+  flex-direction: column; 
+  max-width: fit-content;
+  padding: 0px;
+  height: fit-content;
+  align-items: center;
+}
+
+.smbutton{
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  border-width: 0px;
+  background-color: transparent;
+  color: #FCF8F8;
+  font-size: 60px;
+}
+
+.personalbtn{
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  border-width: 0px;
+  background-color: transparent;
+  color: black;
+  font-size: 50px;
+}
+
+.headerbutton{
+  border-width: 0px;
+  border-radius: 0%;
+  background-color: transparent;
+}
+
+.basementbutton{
+  border-width: 0px;
+  border-radius: 0%;
+  display: block;
+  margin: 5px 0px;
+  background-color: transparent;
+  
+}
+.subbutton{
+  background-color: #C84C4C;
+  border-width: 0px;
+  border-radius: 0%;
+  padding: 0px 10px;  
+}
+input[type="email"], textarea{
+  background-color: #FCF8F8;
+  border-color: #FCF8F8;
+  border-style: solid;
+  border-width: 0px;
+  padding: 4px;
+  margin: 10px 0px;
+  min-width: 100%;
+  max-width: 100%;
+  
+}
+input[type="checkbox"]{
+  padding: 0px;
+  margin: 0px;
+}
+
+.bodytxt {
+font-family: "Merriweather", sans-serif;
+font-size: 1.125rem;
+color: black;
+display:block;
+text-align: left;
+}
+
+.newstxt {
+font-family: "Merriweather", sans-serif;
+font-size: 34px;
+line-height: 34px;
+color: #FCF8F8;
+display:block;
+text-align: left;
+}
+
+.privacy {
+font-family: "Merriweather", sans-serif;
+font-size: 12px;
+color: #FCF8F8;
+display:inline;
+text-align: left;
+padding-left: 4px;
+}
+
+.basementbody{
+font-family: "Merriweather", sans-serif;
+font-size: 24px;
+line-height: 24px;
+color: black;
+display:block;
+text-align: center;
+max-width: fit-content;
+}
+
+.title{
+font-family: "Avara", sans-serif;
+font-size: 64px;
+color: black;
+display:block;
+text-align: left;
+}
+
+.connect{
+font-family: "Avara", sans-serif;
+font-size: 64px;
+line-height: 64px;
+color: #FCF8F8;
+display:block;
+text-align: center;
+}
+
+.submit{
+font-family: "Avara", sans-serif;
+font-size: 20px;
+color: black;
+display:block;
+text-align: left;
+padding: 0px;
+}
+.header{
+font-family: "Avara", sans-serif;
+font-size: 32px;
+line-height: 64px;
+color: black;
+display:block;
+text-align: left;
+padding: 0px 0px 0px 0px;
+margin: 0px;
+}
+.basement{
+font-family: "Avara", sans-serif;
+font-size: 32px;
+line-height: 32px;
+color: rgb(0, 0, 0);
+width: fit-content;
+display:block;
+text-align: center;
+}
+.names{
+font-family: "Avara", sans-serif;
+font-size: 48px;
+color: #FCF8F8;
+display:block;
+text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 1000px){ /* Changes font size for the Illustrografika */
+  .title{
+    font-size: 48px;
+  }
+  .connect{
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 434px){
+  .title{
+    font-size: 36px;
+  }
+  .connect{
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .btn-group{
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+}
+
+@media screen and (max-width: 880px){
+  .connect{
+    text-align: center;
+  }
+}
+
+  
+@media screen and (max-width: 574px){
+  .btn-group{
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+}
+
+@media screen and (max-width: 880px){
+  .header{
+    text-align: center;
+    padding: 0px;
+  }
+}
