@@ -22,9 +22,14 @@ src: url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_gene
 }
 
 @font-face{
-    font-family: 'Avara';
-    src: url('Assets/Fonts/Avara/Avara-Bold.ttf');
-    src: url('Assets/Fonts/Avara/Avara-Bold.woff2') format('woff2');
+    font-family: 'Avara_Bold';
+    src: url('Assets/Fonts/Avara/Bold/Avara-Bold.ttf');
+    src: url('Assets/Fonts/Avara/Bold/Avara-Bold.woff2') format('woff2');
+}
+@font-face{
+  font-family: 'Avara_Black';
+  src: url('Assets/Fonts/Avara/Black/Avara-Black.ttf');
+  src: url('Assets/Fonts/Avara/Black/Avara-Black.woff2') format('woff2');
 }
 
 button{
@@ -136,7 +141,7 @@ max-width: fit-content;
 }
 
 .title{
-font-family: "Avara", sans-serif;
+font-family: "Avara_Black", sans-serif;
 font-size: 48px;
 color: black;
 display:block;
@@ -144,7 +149,7 @@ text-align: left;
 }
 
 .connect{
-font-family: "Avara", sans-serif;
+font-family: "Avara_Bold", sans-serif;
 font-size: 40px;
 line-height: 40px;
 color: #FCF8F8;
@@ -153,7 +158,7 @@ text-align: center;
 }
 
 .submit{
-font-family: "Avara", sans-serif;
+font-family: "Avara_Bold", sans-serif;
 font-size: 20px;
 color: black;
 display:block;
@@ -161,7 +166,7 @@ text-align: left;
 padding: 0px;
 }
 .header{
-font-family: "Avara", sans-serif;
+font-family: "Avara_Bold", sans-serif;
 font-size: 24px;
 line-height: 64px;
 text-decoration: underline;
@@ -173,7 +178,7 @@ margin: 0px;
 }
 
 .footer{
-  font-family: "Avara", sans-serif;
+  font-family: "Avara_Bold", sans-serif;
   font-size: 24px;
   line-height: 64px;
   text-decoration: underline;
@@ -184,7 +189,7 @@ margin: 0px;
   margin: 0px;
   }
 .basement{
-font-family: "Avara", sans-serif;
+font-family: "Avara_Bold", sans-serif;
 font-size: 32px;
 line-height: 32px;
 color: white;
@@ -193,7 +198,7 @@ display:block;
 text-align: center;
 }
 .names{
-font-family: "Avara", sans-serif;
+font-family: "Avara_Bold", sans-serif;
 font-size: 48px;
 color: #FCF8F8;
 display:block;
