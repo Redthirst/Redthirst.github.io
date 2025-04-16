@@ -253,6 +253,7 @@ font-size: 32px;
 color: black;
 display:block;
 text-align: center;
+margin-left: 4px;
 }
 .img_profile{
   max-width: 30px;
