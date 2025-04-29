@@ -1,5 +1,5 @@
 html,body{
-    background-color: #FCF8F8;
+    background-color: #FFF7ED;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -38,32 +38,32 @@ src: url('assets/fonts/resistance-generale-master/fonts/webfonts/resistance_gene
 }
 
 button{
-  background-color: #FCF8F8;
-  border-color: #FCF8F8;
+  background-color: #FFF7ED;
+  border-color: #FFF7ED;
   border-style: solid;
   border-radius: 50%;
   border-width: 10px;
 }
 
 .mainbutton{
-  background-color: black;
+  background-color: #242424;
   border-radius: 10px;
   font-family: "Avara_Bold", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
-  color:white;
+  color: #FFF7ED;
   padding: 10px 20px 5px;
   border-width: 0px;
   margin-top: 24px;
 }
 
 .mainbutton-inv{
-  background-color: white;
+  background-color: #FFF7ED;
   border-radius: 10px;
   font-family: "Avara_Bold", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
-  color:black;
+  color:#242424;
   padding: 10px 20px 5px;
   border-width: 0px;
   margin-left: 14px;
@@ -77,19 +77,25 @@ button{
   align-items: center;
 }
 
+.brushstroke{
+  background-color: #FFF7ED;
+  position: absolute;
+  top: 0;
+}
+
 .smbutton{
   max-width: 100px;
   max-height: 100px;
   border-radius: 50%;
   border-width: 0px;
   background-color: transparent;
-  color: #FCF8F8;
-  font-size: 60px;
+  color: #FFF7ED;
+  font-size: 3.75rem;
 }
 
 .prjbutton{
   background-color: transparent;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 18px;
   padding: 0;
   border-radius: 0px;
@@ -102,8 +108,8 @@ button{
   border-radius: 50%;
   border-width: 0px;
   background-color: transparent;
-  color: black;
-  font-size: 50px;
+  color: #242424;
+  font-size: 3.125;
 }
 
 .headerbutton{
@@ -127,8 +133,8 @@ button{
   padding: 0px 10px;  
 }
 input[type="email"], textarea{
-  background-color: #FCF8F8;
-  border-color: #FCF8F8;
+  background-color: #FFF7ED;
+  border-color: #FFF7ED;
   border-style: solid;
   border-width: 0px;
   border-radius: 8px;
@@ -146,7 +152,8 @@ input[type="checkbox"]{
 .bodytxt {
 font-family: "Merriweather", sans-serif;
 font-size: 1.125rem;
-color: black;
+line-height: 1.5rem;
+color: #242424;
 display:block;
 text-align: left;
 margin-top: 24px;
@@ -154,8 +161,8 @@ margin-top: 24px;
 
 .tagtxt {
   font-family: "Merriweather_BI", sans-serif;
-  font-size: 16px;
-  color: black;
+  font-size: 1rem;
+  color: #242424;
   display:block;
   text-align: left;
   margin-top: 24px;
@@ -163,9 +170,9 @@ margin-top: 24px;
 
 .newstxt {
 font-family: "Merriweather", sans-serif;
-font-size: 18px;
+font-size: 1.125rem;
 line-height: 18px;
-color: #FCF8F8;
+color: #FFF7ED;
 display:block;
 text-align: left;
 }
@@ -173,7 +180,7 @@ text-align: left;
 .privacy {
 font-family: "Merriweather", sans-serif;
 font-size: 12px;
-color: #FCF8F8;
+color: #FFF7ED;
 display:inline;
 text-align: left;
 padding-left: 4px;
@@ -183,7 +190,7 @@ padding-left: 4px;
 font-family: "Merriweather", sans-serif;
 font-size: 24px;
 line-height: 24px;
-color: black;
+color: #242424;
 display:block;
 text-align: center;
 max-width: fit-content;
@@ -191,35 +198,36 @@ max-width: fit-content;
 
 .title{
 font-family: "Avara_Black", sans-serif;
-font-size: 48px;
-color: black;
+font-size: 3rem;
+color: #242424;
 display:block;
 text-align: left;
 }
 
 .connect{
 font-family: "Avara_Bold", sans-serif;
-font-size: 40px;
-line-height: 40px;
-color: #FCF8F8;
+font-size: 2.5rem;
+line-height: 2.5rem;
+color: #FFF7ED;
 display:block;
 text-align: center;
 }
 
 .submit{
 font-family: "Avara_Bold", sans-serif;
-font-size: 20px;
-color: black;
+font-size: 1.25rem;
+color: #242424;
 display:block;
 text-align: left;
 padding: 0px;
 }
+
 .header{
 font-family: "Avara_Bold", sans-serif;
-font-size: 24px;
+font-size: 1.5rem;
 line-height: 64px;
 text-decoration: underline;
-color: black;
+color: #242424;
 display:block;
 text-align: left;
 padding: 0px 0px 0px 0px;
@@ -228,10 +236,10 @@ margin: 0px;
 
 .footer{
   font-family: "Avara_Bold", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 64px;
   text-decoration: underline;
-  color: white;
+  color: #FFF7ED;
   display:block;
   text-align: left;
   padding: 0px 0px 0px 0px;
@@ -239,9 +247,9 @@ margin: 0px;
   }
 .basement{
 font-family: "Avara_Bold", sans-serif;
-font-size: 32px;
-line-height: 32px;
-color: white;
+font-size: 2rem;
+line-height: 2rem;
+color: #FFF7ED;
 width: fit-content;
 display:block;
 text-align: center;
@@ -249,8 +257,8 @@ margin-top: 24px;
 }
 .names{
 font-family: "Avara_Bold", sans-serif;
-font-size: 32px;
-color: black;
+font-size: 2rem;
+color: #242424;
 display:block;
 text-align: center;
 margin-left: 4px;

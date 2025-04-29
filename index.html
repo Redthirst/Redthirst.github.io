@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Illustrografika</title>
-    <link rel="icon" type="image/x-icon" href="Assets/Images/Favicon.ico">
+    <link rel="icon" type="image/x-icon" href="Assets/Images/Favicon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="Assets/Code/jquery-3.7.1.js"></script>
@@ -12,12 +12,12 @@
   </head>
   <body>
     <div class="d-flex justify-content-center" style="padding: 0; margin: auto; max-width: 1200px;"> <!-- First column container-->
-        <div class="d-flex flex-row justify-content-between" id="header" style="margin: 0px 24px 64px"> <!-- Header/navbar || Move it to a burger menu when accessed with phone -->
+        <div class="d-flex flex-row justify-content-between" id="header" style="margin: 0px 24px 64px; width: 100%;"> <!-- Header/navbar || Move it to a burger menu when accessed with phone -->
             <div class="row justify-content-center gy-2" id="burger" style="display: none; margin: 20px 0px 0px 0px;"></div>
           <div class="col-sm-1" id="logoCont">
             <div class="row" style="column-gap: 25%;">
               <div class="col-12" id="logo"><img src="Assets/Images/Logo_WB.png" class="img-fluid"></div> <!-- Logo gets too big on phone -->
-              <div class="col-3" id="burgerBtnCont" style="display:none;"><button type="button" id="burgerBtn" onclick="showMenu(true)"><img src="Assets/Images/Burger_Menu_Default.png" class="img-fluid" id="burger-image"></button></div>
+              <div class="col-3" id="burgerBtnCont" style="display:none;"><button type="button" id="burgerBtn" onclick="showMenu(true)"><img src="Assets/Images/Burger_Menu.svg" class="img-fluid" id="burger-image"></button></div>
             </div>
           </div>
           <div class="col-auto" id="header-offset">
@@ -50,7 +50,7 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-6">
-                <img src="Assets/Images/Illustration_Welcome.png" class="img-fluid">
+                <img src="Assets/Images/Welcome.svg" class="img-fluid">
               </div>
               <div class="col-sm-6">
                 <span class="title">WELCOME TO ILLUSTROGRAFIKA</span>
@@ -60,17 +60,25 @@
           </div>
         </div>
       </div>
-        <div class="row justify-content-center" style="margin: 0px 0px 64px; background-color: black; width: 100%; height: 520px;"> <!-- Coming Soon -->
-          <div class="col-4 offset-md-1"><div class="connect" id="cs" style="color: white; padding-top:215px">COMING SOON</div></div>
+        <div class="col-12" style="margin: 0px 0px 64px; width: 100%;">
+            <img src="Assets/Images/Brushstroke_Top.png" class="img-fluid">
+        <div class="row justify-content-center" style="padding: 64px; background-color: #242424; width: 100%;"> <!-- Coming Soon -->
+          <div class="col-5"><div class="connect" id="cs">PARHELION <br>
+            <span class="bodytxt" style="color: #FFF7ED; text-align: center;">In the near future, the Sun will shine bright enough to send humanity back to the Stone Age, and you will be the last, desperate sacrifice to its greatness.</span>
+            <button type="button" class="mainbutton-inv" style="margin-top: 24px;">COMING SOON</button>
+          </div>
+          </div>
         </div>
+        <img src="Assets/Images/Brushstroke_Bottom.png" class="img-fluid">
+      </div>
         <div class="d-flex justify-content-center" style="padding: 0; margin: auto; max-width: 1200px;"> <!-- Second column container-->
           <div class="row align-items-center mx-5"style="margin: 0px 24px 64px;">
           <div class="col-12" style="margin-bottom: 64px;"><span class="title">01. PROJECTS</span>
           <div class="container">
             <div class="row">
               <div class="col">
-                <img src="Assets/Images/Illustration_Impasse.png" class="img-fluid">
-                <span class="basement"  style="color:black">IMPASSE</span>
+                <img src="Assets/Images/Impasse_Visual.jpg" class="img-fluid">
+                <span class="basement"  style="color:#242424">IMPASSE</span>
                 <span class="bodytxt">Impasse is a visual novel about being torn between the comfortable past  and the challenging future. Navigate your dreams, piece together your  story, and explore the eternal nowhere of human fantasy.</span>
                 <span class="tagtxt">visual novel ✦ story ✦ free</span>
                 <div class="d-flex flex-row">
@@ -80,8 +88,8 @@
               </div>
               <div class="col">
                 <div class="col"></div>
-                <img src="Assets/Images/Illustration_WiP.jpg" class="img-fluid">
-                <span class="basement" style="color:black">STAY TUNED...</span>
+                <img src="Assets/Images/Newsletter_Visual.svg" class="img-fluid">
+                <span class="basement" style="color:#242424">STAY TUNED...</span>
                 <span class="bodytxt">Join our newsletter or follow us on social media to keep up with the latest news!</span>
                 <div class="d-flex flex-row">
                   <button type="button" class="mainbutton">JOIN</button>
@@ -98,7 +106,7 @@
         <div class="row align-items-center mx-5" id="about" style="margin: 0px 24px 64px; max-width: 1200px;"> <!-- About Us -->
           <div class="col-12" style="margin-bottom: 20px;"><span class="title">02. PRINCIPLES</span></div>
           <div class="col-sm-6" style="margin-bottom: 20px;">
-                  <img src="Assets/Images/Illustration_Roots.png" class="img-fluid">
+                  <img src="Assets/Images/Roots.svg" class="img-fluid">
             </div>
             <div class="col-sm-6" style="margin-bottom: 20px;">
               <span class="bodytxt"><span class="connect">ROOTS</span>Our philosophy is a radical acceptance of the simple fact - we accept that our lives - be it our cultural heritage or worldviews - will seep and creep into whatever we set our mind. However, we also vow to see the world as a diverse infinity as it is, and translate it into our with care and love for other lived experiences.</span>
@@ -108,11 +116,11 @@
               <span class="bodytxt"><span class="connect">CRAFT</span>As a small team consisting of only two people - bedroom developers if you will - we see our work more like craft and less than production. Every element, no matter how small, is painstaking and intentional, forming a harmonious structure where every action, detail and emotion matters.</span>
             </div>
             <div class="col-sm-6" style="margin-bottom: 20px;"> 
-              <img src="Assets/Images/Illustration_Craft.png" class="img-fluid"> <!-- Has to be moved on top of the text when accessed through phone -->
+              <img src="Assets/Images/Craft.svg" class="img-fluid"> <!-- Has to be moved on top of the text when accessed through phone -->
             </div>
 
             <div class="col-sm-6" style="margin-bottom: 20px;">
-                  <img src="Assets/Images/Illustration_Poise.png" class="img-fluid">
+                  <img src="Assets/Images/Poise.svg" class="img-fluid">
             </div>
             <div class="col-sm-6" style="margin-bottom: 20px;">
               <span class="bodytxt"><span class="connect">POISE</span>Today, the world ends. Gentle moonlight illuminates a serpent opening it’s jaw, a man who has no mercy for another, a dog lashed one too many times. Don’t worry. Tomorrow, pick up the pieces and try again.</span>
@@ -123,7 +131,6 @@
             <div class="col-12" style="margin-bottom: 20px;"><span class="title">03. PEOPLE</span></div>
             <div class="col-sm-6" style="margin-bottom: 20px;">
               <div class="d-flex flex-row">
-                <img src="Assets/Images/Avatar_Pallas.png" class="img_profile">
                 <span class="names">VINETA</span>
               </div>
               <span class="tagtxt">game design ✦ art ✦ writing ✦ music ✦ ui/ux</span>
@@ -145,7 +152,6 @@
             </div>
             <div class="col-sm-6" style="margin-bottom: 20px;">
               <div class="d-flex flex-row">
-                <img src="Assets/Images/Avatar_Ceres.png" class="img_profile">
                 <span class="names">LAERIN</span>
               </div>
               <span class="tagtxt">game design ✦ programming ✦ sfx ✦ ui/ux</span>
@@ -158,7 +164,7 @@
             </div>
           </div>
         </div>
-          <div class="row justify-content-center" id="contact" style="background-color: black; padding: 60px 0px; flex-direction: row;"> <!-- Contact -->
+          <div class="row justify-content-center" id="contact" style="background-color: #242424; padding: 60px 0px; flex-direction: row;"> <!-- Contact -->
             <div class="d-flex align-items-left flex-row" style="padding: 0; margin: auto; max-width: 1200px;">
               <div class="container">
                 <div class="row">
@@ -178,7 +184,16 @@
                 <div class="col">
                   <div class="col-sm-12" >
                   <div class="col-sm-2" id="sub" style="margin-bottom: 20px; display: inline-block; width: auto;">
-                    <div class="newstxt">Join our newsletter for the latest updates on our projects and games.</div>
+                    <div class="row">
+                    <div class="col-sm-4">
+                      <img src="Assets/Images/Newsletter_Icon.svg">
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="newstxt">
+                        Join our newsletter for the latest updates on our projects and games.
+                      </div>
+                    </div>
+                    </div>
                     <div class="d-flex flex-row">
                       <input type="email" placeholder="example@gmail.com" id="emailInput">
                       <button type="button" class="mainbutton-inv">JOIN</button>
