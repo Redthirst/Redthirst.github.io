@@ -109,7 +109,7 @@ button{
   border-width: 0px;
   background-color: transparent;
   color: #242424;
-  font-size: 3.125;
+  font-size: 3.125rem;
 }
 
 .headerbutton{
@@ -210,7 +210,7 @@ font-size: 2.5rem;
 line-height: 2.5rem;
 color: #FFF7ED;
 display:block;
-text-align: center;
+text-align: left;
 }
 
 .submit{
