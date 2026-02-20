@@ -694,9 +694,9 @@ h1, h2, h3, h4, h5, h6 {
 
     .gallery-top{
         position: relative;
-        margin: -36px -36px 36px;
+        margin: 36px -36px -36px;
          @media(width <= calc(389 / 16 * 1rem)){
-            margin: -16px -16px 16px;
+            margin: 16px -16px -16px;
          }
 
          @media(width >= calc(1100 / 16 * 1rem)){
