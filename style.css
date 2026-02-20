@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: var(--font-size-h3);
         text-transform: uppercase;
         color: var(--color-secondary);
+        line-height: var(--font-size-h3);
     }
 
     h4{
@@ -145,7 +146,12 @@ h1, h2, h3, h4, h5, h6 {
 @layer global{
     :root{
         --padding-main: 36px;
-        @media(width >= calc(1100 / 16 * 1rem)){
+
+        @media(width <= calc(389 / 16 * 1rem)){
+            --padding-main: 16px;
+         }
+        
+         @media(width >= calc(1100 / 16 * 1rem)){
             --padding-main: 72px 100px;
          }
 
@@ -185,16 +191,14 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 25% 1fr repeat(2, max-content);
         place-items: center;
         column-gap: 18px;
-        position: fixed;
-        top: 0;
         background-color: var(--color-background-1);
-        padding: 18px 36px;
+        padding: var(--padding-main);
         width: 100%;
-        z-index: 1001;
+        position: fixed;
 
         @media(width >= calc(1100 / 16 * 1rem)){
             grid-template-columns: max-content 1fr max-content;
-            padding: 40px 100px;
+            position: static;
          }
     }
 
@@ -205,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-rows: 1fr repeat(5, min-content) 1fr;
         row-gap: 5vh;
         place-items: center;
-        height: 100vh;
+        height: 92vh;
         @media(width >= calc(1100 / 16 * 1rem)){
             display: flex;
             grid-column: 3;
@@ -244,6 +248,13 @@ h1, h2, h3, h4, h5, h6 {
 
     }
 
+    #menu-button{
+        display: none;
+        @media(width >= calc(1100 / 16 * 1rem)){
+            display: block;
+         }
+    }
+
 }
 
 @layer hero{
@@ -252,15 +263,15 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
         place-items: center;
         padding: var(--padding-main);
-        padding-top: 144px;
         background-color: var(--color-background-1);
         row-gap: 18px;
+        padding-top: 72px;
 
         @media(width >= calc(1100 / 16 * 1rem)){
             grid-template-columns: 38% 1fr;
             grid-template-rows: 1fr;
             column-gap: 40px;
-            padding-top: 216px;
+            padding: var(--padding-main);
          }
     }
 
@@ -427,6 +438,12 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
 
+    .second-column{
+        @media(width >= calc(1100 / 16 * 1rem)){
+            grid-template-rows: 51% 47%;
+        }
+    }
+
     .menu-item{
         display: flex;
         justify-content: space-between; 
@@ -533,10 +550,19 @@ h1, h2, h3, h4, h5, h6 {
             top: 50;
             transform: translateY(-20%);
             z-index: 0;
-         }
+        }
     }
 
     .season-container{
+        overflow: hidden;
+
+        @media(width >= calc(1100 / 16 * 1rem)){
+            height: 180px;
+            border-radius: var(--radius);
+         }
+    }
+
+    .coffee-container{
         overflow: hidden;
 
         @media(width >= calc(1100 / 16 * 1rem)){
@@ -553,25 +579,24 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .coffee{
-        aspect-ratio: 1 / 1;
         object-fit: cover;
+        width: 100%;
+        height: 292px;
     }
 
      .tea{
-        aspect-ratio: 5 / 4;
         object-fit: cover;
         width: 100%;
+        height: 244px;
     }
 
     .food{
         aspect-ratio: 4 / 3;
         object-fit: cover;
-
          @media(width >= calc(1100 / 16 * 1rem)){
             aspect-ratio: auto;
             height: 100%;
-            min-height: 100%;
-            object-fit: fill;
+            width: 100%;
          }
     }
 
@@ -579,6 +604,22 @@ h1, h2, h3, h4, h5, h6 {
         @media(width >= calc(1100 / 16 * 1rem)){
             text-align: left;
          }
+    }
+
+    #food-container{
+         @media(width >= calc(1100 / 16 * 1rem)){
+           grid-template-columns: 46% 51%;
+         }
+    }
+
+    .menu-break{
+        height: 1px;
+    }
+
+    .menu-item-inner{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
     }
 
 
@@ -610,6 +651,7 @@ h1, h2, h3, h4, h5, h6 {
         border-image: var(--border-image-url);
         border-style: solid;
         background-color: var(--color-background-2);
+        overflow: hidden;
     }
 
     .resp-textbox{
@@ -634,6 +676,10 @@ h1, h2, h3, h4, h5, h6 {
 
     .resp-subtitle{
         text-wrap: nowrap;
+
+         @media(width <= calc(390 / 16 * 1rem)){
+            text-wrap: wrap;
+         }
     }
 
     .resp-image{
@@ -646,6 +692,20 @@ h1, h2, h3, h4, h5, h6 {
          }
     }
 
+    .gallery-top{
+        position: relative;
+        margin: -36px -36px 36px;
+         @media(width <= calc(389 / 16 * 1rem)){
+            margin: -16px -16px 16px;
+         }
+
+         @media(width >= calc(1100 / 16 * 1rem)){
+            margin: 72px -100px -72px;
+         }
+        
+        min-width: 100vw;
+    }
+
 }
 
 @layer gallery{
@@ -653,7 +713,7 @@ h1, h2, h3, h4, h5, h6 {
         display: grid;
         grid-template-columns: 1fr;
         padding: var(--padding-main);
-        background-image: url("Images/Gallery-BG.png");
+        background-image: url("Images/Gallery-BG1.png");
         background-repeat: no-repeat;
         background-size: cover;
         @media(width >= calc(1100 / 16 * 1rem)){
@@ -805,13 +865,13 @@ h1, h2, h3, h4, h5, h6 {
 
     .carousel-button{
         width: 25%;
-        background-color: var(--color-secondary);
+        background-color: transparent;
         min-width: 40px;
         height: 8px;
     }
 
     #gal-1{
-        background-color: var(--color-background-1);
+        filter: brightness(0) saturate(100%) invert(86%) sepia(39%) saturate(222%) hue-rotate(343deg) brightness(103%) contrast(96%);
     }
 
     .gallery-title{
@@ -845,7 +905,8 @@ h1, h2, h3, h4, h5, h6 {
 
     .footer-info{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        row-gap: 18px;
 
         @media(width >= calc(1100 / 16 * 1rem)){
             grid-template-columns: repeat(2, min-content);
@@ -901,6 +962,19 @@ h1, h2, h3, h4, h5, h6 {
 
     .footer-1{
         width: fit-content;
+    }
+
+    .gallery-bottom{
+        margin: -36px -36px 36px;
+         @media(width <= calc(389 / 16 * 1rem)){
+            margin: -16px -16px 16px;
+         }
+
+         @media(width >= calc(1100 / 16 * 1rem)){
+            margin: -72px -100px 72px;
+         }
+        
+        min-width: 100vw;
     }
 
 }
