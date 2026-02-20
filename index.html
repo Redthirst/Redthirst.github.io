@@ -149,7 +149,6 @@
         </div>
       </div>
     </div>
-    <img src="Images/DecoLine.svg" class="gallery-top">
     </section>
 
 
@@ -165,14 +164,55 @@
 
       <div class="carousel-container">
         <div class="gallery-carousel" id="carousel">
+        <picture class="carousel-image desktop-gal">
+          <source srcset="Images/Gallery-1.jpg" media="(width >= 1100px)" />
+          <source srcset="Images/ph.png" />
+          <img src="Images/Gallery-1.jpg" class="carousel-image">
+        </picture>
         
-        <div class="image-container"><img src="Images/Gallery-1.jpg" class="carousel-image"></div>
-        <div class="image-container"><img src="Images/Gallery-2.jpg" class="carousel-image"></div>
-        <img src="Images/Gallery-1.jpg" class="carousel-image mobile" id="img-1">
+        <picture class="carousel-image desktop-gal">
+          <source srcset="Images/Gallery-2.jpg" media="(width >= 1100px)" />
+          <source srcset="Images/ph.png" />
+          <img src="Images/Gallery-2.jpg" class="carousel-image">
+        </picture>
+        <!-- <img src="Images/Gallery-1.jpg" class="carousel-image">
+        <img src="Images/Gallery-2.jpg" class="carousel-image"> -->
+        
+        <picture class="mobile">
+          <source srcset="Images/Gallery-1.jpg" media="(width <= 1100px)" />
+          <source srcset="Images/ph.png" />
+          <img src="Images/Gallery-1.jpg" class="carousel-image" id="img-1">
+        </picture>
+         
+        <picture class="mobile">
+          <source srcset="Images/Gallery-2.jpg" media="(width <= 1100px)" />
+          <source srcset="Images/ph.png" />
+          <img src="Images/Gallery-2.jpg" class="carousel-image" id="img-2">
+        </picture>
+         
+        <picture class="mobile">
+          <source srcset="Images/Gallery-3.jpg" media="(width <= 1100px)" />
+          <source srcset="Images/ph.png" />
+          <img src="Images/Gallery-3.jpg" class="carousel-image" id="img-3">
+        </picture>
+         
+        <picture class="mobile">
+          <source srcset="Images/Gallery-4.jpg" media="(width <= 1100px)" />
+          <source srcset="Images/ph.png" />
+          <img src="Images/Gallery-4.jpg" class="carousel-image" id="img-4">
+        </picture>
+         
+        <picture class="mobile">
+          <source srcset="Images/Gallery-5.jpg" media="(width <= 1100px)" />
+          <source srcset="Images/ph.png" />
+          <img src="Images/Gallery-5.jpg" class="carousel-image" id="img-5">
+        </picture>
+        
+   <!--      <img src="Images/Gallery-1.jpg" class="carousel-image mobile" id="img-1">
         <img src="Images/Gallery-2.jpg" class="carousel-image mobile" id="img-2">
         <img src="Images/Gallery-3.jpg" class="carousel-image mobile" id="img-3">
         <img src="Images/Gallery-4.jpg" class="carousel-image mobile" id="img-4">
-        <img src="Images/Gallery-5.jpg" class="carousel-image mobile" id="img-5">
+        <img src="Images/Gallery-5.jpg" class="carousel-image mobile" id="img-5"> -->
       </div>
       
       <div class="carousel-buttons">
@@ -184,12 +224,29 @@
       </div>
 
       <div class="gallery-desktop">
-        <div class="image-container"><img src="Images/Gallery-3.jpg" class="carousel-image"></div>
-        <div class="image-container"><img src="Images/Gallery-4.jpg" class="carousel-image"></div>
-        <div class="image-container"><img src="Images/Gallery-5.jpg" class="carousel-image"></div>
+         <picture class="desktop-gal">
+          <source srcset="Images/Gallery-3.jpg" media="(width >= 1100px)" />
+          <source srcset="Images/ph.png" />
+          <img src="Images/Gallery-3.jpg" class="carousel-image">
+        </picture>
+         
+        <picture class="desktop-gal">
+          <source srcset="Images/Gallery-4.jpg" media="(width >= 1100px)" />
+          <source srcset="Images/ph.png" />
+          <img src="Images/Gallery-4.jpg" class="carousel-image">
+        </picture>
+        
+        <picture class="desktop-gal">
+          <source srcset="Images/Gallery-5.jpg" media="(width >= 1100px)" />
+          <source srcset="Images/ph.png" />
+          <img src="Images/Gallery-5.jpg" class="carousel-image">
+        </picture>
+        
+        <!-- <img src="Images/Gallery-3.jpg" class="carousel-image">
+        <img src="Images/Gallery-4.jpg" class="carousel-image">
+        <img src="Images/Gallery-5.jpg" class="carousel-image"> -->
       </div>
       </div>
-      <img src="Images/Gallery-Bottom-Desktop.svg" class="gallery-top">
       
     </section>
 
