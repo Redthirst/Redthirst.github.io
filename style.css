@@ -706,7 +706,7 @@ h1, h2, h3, h4, h5, h6 {
         border-style: solid;
         border-width: 0px 0px 15px;
         border-image: url("Images/Border-bot.png") 100 stretch;
-        place-items: center;
+        place-items: start;
         @media(width >= calc(1100 / 16 * 1rem)){
             grid-template-rows: 5% 12% 83%;
          }
