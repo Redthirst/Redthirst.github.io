@@ -183,6 +183,10 @@ h1, h2, h3, h4, h5, h6 {
     body{
         background-color: var(--color-background-1);
     }
+
+    html{
+        overflow-x: hidden;
+    }
 }
 
 @layer header{
@@ -265,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: var(--padding-main);
         background-color: var(--color-background-1);
         row-gap: 18px;
-        padding-top: 72px;
+        padding-top: 108px;
 
         @media(width >= calc(1100 / 16 * 1rem)){
             grid-template-columns: 38% 1fr;
@@ -682,20 +686,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .resp-image{
-        height: 170px;
+        height: auto;
         width: 100%;
         object-fit: cover;
 
-        @media(width >= calc(1100 / 16 * 1rem)){
-            height: 270px;
-         }
     }
 
-    .gallery-top{
-        position: absolute;
-        top: 2300px;
-        left: 0;
-    }
 
 }
 
@@ -710,6 +706,7 @@ h1, h2, h3, h4, h5, h6 {
         border-style: solid;
         border-width: 0px 0px 15px;
         border-image: url("Images/Border-bot.png") 100 stretch;
+        place-items: center;
         @media(width >= calc(1100 / 16 * 1rem)){
             grid-template-rows: 5% 12% 83%;
          }
@@ -783,7 +780,7 @@ h1, h2, h3, h4, h5, h6 {
         
         @media(width >= calc(1100 / 16 * 1rem)){
             display: grid;
-            grid-template-columns: repeat(3, max-content);
+            grid-template-columns: repeat(3, auto);
             column-gap: 40px;
             place-items: start;
          }
@@ -798,18 +795,18 @@ h1, h2, h3, h4, h5, h6 {
 
         @media(width >= calc(1100 / 16 * 1rem)){
             display: grid;
-            grid-template-columns: repeat(2, max-content);
+            grid-template-columns: repeat(2, auto);
             column-gap: 40px;
             max-height: 340px;
             overflow: visible;
             max-width: 100%;
             place-items: start;
+            overflow: hidden;
          }
     }
 
     .mobile{
         min-width: 100%;
-        display: block;
         @media(width >= calc(1100 / 16 * 1rem)){
             display: none;
          }
@@ -818,7 +815,6 @@ h1, h2, h3, h4, h5, h6 {
     .carousel-image{
         scroll-snap-align: start;
         border-radius: 5px;
-        width: 100%;
         object-fit: cover;
     }
 
@@ -836,6 +832,8 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
         @media(width >= calc(1100 / 16 * 1rem)){
             display: block;
+            width: 100%;
+            height: auto;
          }
     }
 
