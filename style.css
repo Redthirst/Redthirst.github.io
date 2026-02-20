@@ -789,9 +789,8 @@ h1, h2, h3, h4, h5, h6 {
         
         @media(width >= calc(1100 / 16 * 1rem)){
             display: grid;
-            grid-template-columns: 2fr 20% 3fr;
+            grid-template-columns: repeat(3, max-content);
             column-gap: 40px;
-            max-height: 340px;
             place-items: start;
          }
     }
@@ -805,17 +804,18 @@ h1, h2, h3, h4, h5, h6 {
 
         @media(width >= calc(1100 / 16 * 1rem)){
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: repeat(2, max-content);
             column-gap: 40px;
             max-height: 340px;
             overflow: visible;
             max-width: 100%;
-            place-items: center;
+            place-items: start;
          }
     }
 
     .mobile{
         border-radius: 5px;
+        object-fit: cover;
         @media(width >= calc(1100 / 16 * 1rem)){
             display: none;
          }
@@ -823,7 +823,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .carousel-image{
         scroll-snap-align: start;
-        object-fit: scale-down;
     }
 
     .centered{
@@ -839,9 +838,6 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
         @media(width >= calc(1100 / 16 * 1rem)){
             border-radius: 5px;
-            overflow: hidden;
-            max-height: 340px;
-            height: 340px;
             display: block;
          }
     }
